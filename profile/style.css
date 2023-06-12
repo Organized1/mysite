@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+    display: inline-block;
+    position: fixed;
+}
+footer{
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+
+}
+.list {
+    list-style: none;
+    display: inline-block;
+}
+.list a{
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+.list a:hover{
+    color: #6666ff;
+    border: solid 1px coral;
+    transition: 0s;
+    transform: scale(1);
+transition: 0.8s;
+}
+
+main {
+	padding: 20px;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.circular-img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+.buttons a{
+text-decoration: none;
+color: #fff;
+font-size: 20px;
+}
+.buttons a:hover{
+    text-decoration: none;
+    color: #e6f053;
+    font-size: 30px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.button1 {
+	background-color: #ff6666;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+}
+
+.button2 {
+	background-color: #66ff66;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+}
+
+.button3 {
+	background-color: #6666ff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 30px;
+}
+
+.images {
+	display: flex;
+	justify-content: center;
+}
+
+.image-box {
+    margin: 20px;
+    padding: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.images img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	margin: 10px;
+	animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about {
+		margin: 20px 0;
+	}
+	.buttons {
+		flex-direction: column;
+		align-items: center;
+		margin: 20px 0;
+	}
+	.button1, .button2, .button3 {
+		margin: 10px 0;
+	}
+	.images img {
+		width: 150px;
+		height: 150px;
+	}
+}
